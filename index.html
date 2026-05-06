@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>ذكرياتنا ❤️</title>
+<title>ذكرياتك ❤️</title>
 
 <style>
 body {
@@ -24,7 +24,6 @@ h1 {
   width: 80%;
   background: rgba(255,255,255,0.2);
   border-radius: 20px;
-  backdrop-filter: blur(10px);
 }
 
 .memory img {
@@ -42,14 +41,7 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
-
-#secret {
-  display: none;
-  margin-top: 20px;
-  font-size: 18px;
-}
 </style>
-
 </head>
 
 <body>
@@ -58,33 +50,33 @@ button {
 
 <div class="memory">
   <img src="photo1.jpg">
-  <p>أحلى صورة لينا ❤️</p>
+  <p>أحلى صورة ❤️</p>
 </div>
 
 <div class="memory">
   <img src="photo2.jpg">
- <p>أجمل لحظة ❤️</p>
+  <p> جمالك ❤️</p>
 </div>
+
 <button onclick="showMessage()">اضغط هنا 💌</button>
 
-
-<div id="secret">
-  ?? ÈÍÈß ÌÏðÇ æãÈÓæØ Èßá áÍÙÉ ãÚÇß ??
+<div id="secret" style="display:none; margin-top:20px;">
+  بحبك جدًا ❤️
 </div>
 
 <audio autoplay loop muted id="music">
   <source src="music.mp3" type="audio/mpeg">
 </audio>
-<div id="secret" style="display:none; margin-top:20px;">
-  بحبك جدًا ❤️
-</div>
+
 <script>
 function showMessage() {
   document.getElementById("secret").style.display = "block";
 }
-</script>
+
 document.body.addEventListener("click", function() {
   document.getElementById("music").muted = false;
 });
+</script>
+
 </body>
 </html>
