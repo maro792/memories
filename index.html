@@ -2,7 +2,7 @@
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
-<title>ÐßÑíÇÊäÇ ??</title>
+<title>ذكرياتنا ❤️</title>
 
 <style>
 body {
@@ -54,33 +54,37 @@ button {
 
 <body>
 
-<h1>ÐßÑíÇÊäÇ ??</h1>
+<h1>ذكرياتنا ❤️</h1>
 
 <div class="memory">
   <img src="photo1.jpg">
-  <p>Ãæá íæã ÞÇÈáäÇ ÈÚÖ ??</p>
+  <p>أحلى صورة لينا ❤️</p>
 </div>
 
 <div class="memory">
   <img src="photo2.jpg">
-  <p>ÃÌãá ÎÑæÌÉ ??</p>
+ <p>أجمل لحظة ❤️</p>
 </div>
+<button onclick="showMessage()">اضغط هنا 💌</button>
 
-<button onclick="showMessage()">ÇÖÛØ åäÇ ??</button>
 
 <div id="secret">
   ?? ÈÍÈß ÌÏðÇ æãÈÓæØ Èßá áÍÙÉ ãÚÇß ??
 </div>
 
-<audio autoplay loop>
+<audio autoplay loop muted id="music">
   <source src="music.mp3" type="audio/mpeg">
 </audio>
-
+<div id="secret" style="display:none; margin-top:20px;">
+  بحبك جدًا ❤️
+</div>
 <script>
 function showMessage() {
   document.getElementById("secret").style.display = "block";
 }
 </script>
-
+document.body.addEventListener("click", function() {
+  document.getElementById("music").muted = false;
+});
 </body>
 </html>
